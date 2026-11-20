@@ -3,3 +3,7 @@ data/
 __pycache__/
 *.pyc
 .venv/
+
+# Phase 3 model artifacts: the trained booster is large and regenerable, so it is
+# not tracked. Models are reproducible from the pipeline (random_state=42).
+models/xgb_aml.json

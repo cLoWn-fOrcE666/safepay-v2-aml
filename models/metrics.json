@@ -1,0 +1,101 @@
+{
+  "label": "isFraud",
+  "class_balance": {
+    "train_positive": 3643,
+    "train_negative": 4450191,
+    "scale_pos_weight": 1221.5731539939611
+  },
+  "selected_model": "full_weighted",
+  "threshold": 0.9892990589141846,
+  "val": {
+    "f1_optimal": 0.8241106719367589,
+    "precision_at_80_recall": 0.7705479452054794
+  },
+  "test": {
+    "auprc": 0.9624221541793843,
+    "roc_auc": 0.9997472512899148,
+    "precision": 0.9925227568270482,
+    "recall": 0.7617265469061876,
+    "f1": 0.8619424054206662,
+    "fpr": 2.4200718656123572e-05,
+    "alert_volume": 3076
+  },
+  "ablation": {
+    "full_weighted": {
+      "test": {
+        "auprc": 0.9624221541793843,
+        "roc_auc": 0.9997472512899148,
+        "precision": 0.9925227568270482,
+        "recall": 0.7617265469061876,
+        "f1": 0.8619424054206662,
+        "fpr": 2.4200718656123572e-05,
+        "alert_volume": 3076
+      },
+      "threshold": 0.9892990589141846,
+      "best_iteration": 243
+    },
+    "full_unweighted": {
+      "test": {
+        "auprc": 0.9762640880726332,
+        "roc_auc": 0.9998812230230008,
+        "precision": 0.9979681679647816,
+        "recall": 0.7352794411177644,
+        "f1": 0.8467174256572332,
+        "fpr": 6.3132309537713666e-06,
+        "alert_volume": 2953
+      },
+      "threshold": 0.49626073241233826,
+      "best_iteration": 429
+    },
+    "tabular_only": {
+      "test": {
+        "auprc": 0.9686068338013051,
+        "roc_auc": 0.9997980077188384,
+        "precision": 0.9953749587049885,
+        "recall": 0.751746506986028,
+        "f1": 0.8565742714996446,
+        "fpr": 1.4730872225466521e-05,
+        "alert_volume": 3027
+      },
+      "threshold": 0.9896230697631836,
+      "best_iteration": 336
+    },
+    "graph_feature_auprc_lift": -0.006184679621920819
+  },
+  "feature_importances": {
+    "step": 0.010913362726569176,
+    "type": 0.5012256503105164,
+    "amount": 0.07108969241380692,
+    "oldbalanceOrg": 0.1146782636642456,
+    "newbalanceOrig": 0.18709665536880493,
+    "oldbalanceDest": 0.021100400015711784,
+    "newbalanceDest": 0.045675572007894516,
+    "orig_in_degree": 0.0,
+    "orig_out_degree": 8.845652337186038e-05,
+    "orig_pagerank": 0.002843288704752922,
+    "orig_clustering": 0.0,
+    "dest_in_degree": 0.005209671799093485,
+    "dest_out_degree": 0.0,
+    "dest_pagerank": 0.040079064667224884,
+    "dest_clustering": 0.0
+  },
+  "graph_features": [
+    "orig_in_degree",
+    "orig_out_degree",
+    "orig_pagerank",
+    "orig_clustering",
+    "dest_in_degree",
+    "dest_out_degree",
+    "dest_pagerank",
+    "dest_clustering"
+  ],
+  "tabular_features": [
+    "step",
+    "type",
+    "amount",
+    "oldbalanceOrg",
+    "newbalanceOrig",
+    "oldbalanceDest",
+    "newbalanceDest"
+  ]
+}

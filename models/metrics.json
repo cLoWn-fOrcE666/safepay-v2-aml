@@ -6,79 +6,88 @@
     "scale_pos_weight": 1221.5731539939611
   },
   "selected_model": "full_weighted",
-  "threshold": 0.9892990589141846,
+  "threshold": 0.9839784502983093,
   "val": {
-    "f1_optimal": 0.8241106719367589,
-    "precision_at_80_recall": 0.7705479452054794
+    "f1_optimal": 0.12913907284768214,
+    "precision_at_80_recall": 0.003402286336418073
   },
   "test": {
-    "auprc": 0.9624221541793843,
-    "roc_auc": 0.9997472512899148,
-    "precision": 0.9925227568270482,
-    "recall": 0.7617265469061876,
-    "f1": 0.8619424054206662,
-    "fpr": 2.4200718656123572e-05,
-    "alert_volume": 3076
+    "auprc": 0.18804619670225506,
+    "roc_auc": 0.9364556223233285,
+    "precision": 0.9921052631578947,
+    "recall": 0.09406187624750499,
+    "f1": 0.17183226982680036,
+    "fpr": 3.1566154768856833e-06,
+    "alert_volume": 380
   },
   "ablation": {
     "full_weighted": {
       "test": {
-        "auprc": 0.9624221541793843,
-        "roc_auc": 0.9997472512899148,
-        "precision": 0.9925227568270482,
-        "recall": 0.7617265469061876,
-        "f1": 0.8619424054206662,
-        "fpr": 2.4200718656123572e-05,
-        "alert_volume": 3076
+        "auprc": 0.18804619670225506,
+        "roc_auc": 0.9364556223233285,
+        "precision": 0.9921052631578947,
+        "recall": 0.09406187624750499,
+        "f1": 0.17183226982680036,
+        "fpr": 3.1566154768856833e-06,
+        "alert_volume": 380
       },
-      "threshold": 0.9892990589141846,
-      "best_iteration": 243
+      "threshold": 0.9839784502983093,
+      "best_iteration": 451
     },
     "full_unweighted": {
       "test": {
-        "auprc": 0.9762640880726332,
-        "roc_auc": 0.9998812230230008,
-        "precision": 0.9979681679647816,
-        "recall": 0.7352794411177644,
-        "f1": 0.8467174256572332,
-        "fpr": 6.3132309537713666e-06,
-        "alert_volume": 2953
+        "auprc": 0.26242319589848606,
+        "roc_auc": 0.9428557075886999,
+        "precision": 0.9246298788694481,
+        "recall": 0.17140718562874252,
+        "f1": 0.2892022732056409,
+        "fpr": 5.8923488901866086e-05,
+        "alert_volume": 743
       },
-      "threshold": 0.49626073241233826,
-      "best_iteration": 429
+      "threshold": 0.11969584971666336,
+      "best_iteration": 219
     },
     "tabular_only": {
       "test": {
-        "auprc": 0.9686068338013051,
-        "roc_auc": 0.9997980077188384,
-        "precision": 0.9953749587049885,
-        "recall": 0.751746506986028,
-        "f1": 0.8565742714996446,
-        "fpr": 1.4730872225466521e-05,
-        "alert_volume": 3027
+        "auprc": 0.24722539334472884,
+        "roc_auc": 0.9213961502070961,
+        "precision": 0.9354037267080745,
+        "recall": 0.18787425149700598,
+        "f1": 0.31290255557864116,
+        "fpr": 5.471466826601851e-05,
+        "alert_volume": 805
       },
-      "threshold": 0.9896230697631836,
-      "best_iteration": 336
+      "threshold": 0.5472872853279114,
+      "best_iteration": 1
     },
-    "graph_feature_auprc_lift": -0.006184679621920819
+    "graph_feature_auprc_lift": -0.059179196642473786
   },
   "feature_importances": {
-    "step": 0.010913362726569176,
-    "type": 0.5012256503105164,
-    "amount": 0.07108969241380692,
-    "oldbalanceOrg": 0.1146782636642456,
-    "newbalanceOrig": 0.18709665536880493,
-    "oldbalanceDest": 0.021100400015711784,
-    "newbalanceDest": 0.045675572007894516,
-    "orig_in_degree": 0.0,
-    "orig_out_degree": 8.845652337186038e-05,
-    "orig_pagerank": 0.002843288704752922,
+    "step": 0.09648396074771881,
+    "type": 0.6507372856140137,
+    "amount": 0.09903565049171448,
+    "orig_in_degree": 0.00016245122242253274,
+    "orig_out_degree": 0.01360053475946188,
+    "orig_pagerank": 0.02548697404563427,
     "orig_clustering": 0.0,
-    "dest_in_degree": 0.005209671799093485,
-    "dest_out_degree": 0.0,
-    "dest_pagerank": 0.040079064667224884,
+    "dest_in_degree": 0.05344345048069954,
+    "dest_out_degree": 0.007979029789566994,
+    "dest_pagerank": 0.05307070538401604,
     "dest_clustering": 0.0
   },
+  "feature_names": [
+    "step",
+    "type",
+    "amount",
+    "orig_in_degree",
+    "orig_out_degree",
+    "orig_pagerank",
+    "orig_clustering",
+    "dest_in_degree",
+    "dest_out_degree",
+    "dest_pagerank",
+    "dest_clustering"
+  ],
   "graph_features": [
     "orig_in_degree",
     "orig_out_degree",
@@ -92,10 +101,16 @@
   "tabular_features": [
     "step",
     "type",
-    "amount",
-    "oldbalanceOrg",
+    "amount"
+  ],
+  "leakage_blocklist": [
+    "isFlaggedFraud",
+    "isFraud",
+    "nameDest",
+    "nameOrig",
+    "newbalanceDest",
     "newbalanceOrig",
     "oldbalanceDest",
-    "newbalanceDest"
+    "oldbalanceOrg"
   ]
 }

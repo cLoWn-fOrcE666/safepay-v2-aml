@@ -20,8 +20,15 @@ logger = logging.getLogger(__name__)
 RAW_PATH: Final[Path] = Path("data/raw/paysim.csv")
 PROCESSED_DIR: Final[Path] = Path("data/processed")
 
-# Columns that leak the label or post-hoc audit information.
-LEAKY_COLUMNS: Final[tuple[str, ...]] = ("isFlaggedFraud",)
+# Columns that leak the label or post-hoc audit information, or that encode
+# moved balances (post-event leakage). Kept in sync with model.LEAKAGE_BLOCKLIST.
+LEAKY_COLUMNS: Final[tuple[str, ...]] = (
+    "oldbalanceOrg",
+    "newbalanceOrig",
+    "oldbalanceDest",
+    "newbalanceDest",
+    "isFlaggedFraud",
+)
 
 # Temporal split fractions (chronological by ``step``).
 TRAIN_FRAC: Final[float] = 0.70

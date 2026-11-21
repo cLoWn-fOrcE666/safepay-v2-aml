@@ -51,6 +51,32 @@ GRAPH_FEATURES: Final[tuple[str, ...]] = (
     "dest_clustering",
 )
 
+# Leak-free pre-event tabular features available in the Phase 2 splits. Balance
+# columns (old/new) and any post-hoc audit fields are DELIBERATELY excluded
+# (see docs/ADR/001-temporal-split-and-leakage.md).
+TABULAR_FEATURES: Final[tuple[str, ...]] = (
+    "step",
+    "type",
+    "amount",
+)
+
+# Optional cyclical time features, included only when present in the parquet.
+OPTIONAL_TIME_FEATURES: Final[tuple[str, ...]] = ("hour_of_day", "day_of_week")
+
+# Columns that must NEVER be used as model features (leakage / identifiers).
+LEAKAGE_BLOCKLIST: Final[frozenset[str]] = frozenset(
+    {
+        "oldbalanceOrg",
+        "newbalanceOrig",
+        "oldbalanceDest",
+        "newbalanceDest",
+        "isFlaggedFraud",
+        "isFraud",
+        "nameOrig",
+        "nameDest",
+    }
+)
+
 # Target precision-recall operating point for the secondary threshold metric.
 RECALL_TARGET: Final[float] = 0.80
 
@@ -112,6 +138,35 @@ def _encode_categoricals(
             frame[col] = pd.Categorical(frame[col].astype(str), categories=categories)
         encoded[name] = frame
     return encoded
+
+
+def _resolve_feature_lists(columns: list[str]) -> tuple[list[str], list[str]]:
+    """Build leakage-free ``(tabular_features, all_features)`` for the splits.
+
+    ``TABULAR_FEATURES`` are the fixed pre-event columns; optional cyclical time
+    features are appended only when actually present in the parquet schema.
+    ``all_features`` = tabular + the eight graph features. A hard assertion
+    guarantees no blocklisted (leaky / identifier) column slips into either list.
+    """
+    tabular: list[str] = [c for c in TABULAR_FEATURES if c in columns]
+    tabular += [c for c in OPTIONAL_TIME_FEATURES if c in columns]
+    all_features: list[str] = tabular + [c for c in GRAPH_FEATURES if c in columns]
+
+    missing_core = [c for c in TABULAR_FEATURES if c not in columns]
+    if missing_core:
+        raise ValueError(f"Parquet is missing required tabular columns: {missing_core}")
+    missing_graph = [c for c in GRAPH_FEATURES if c not in columns]
+    if missing_graph:
+        raise ValueError(f"Parquet is missing required graph columns: {missing_graph}")
+
+    leaked_tabular = set(tabular) & LEAKAGE_BLOCKLIST
+    leaked_all = set(all_features) & LEAKAGE_BLOCKLIST
+    if leaked_tabular or leaked_all:
+        raise AssertionError(
+            f"Leakage blocklist violation: tabular={sorted(leaked_tabular)} "
+            f"all={sorted(leaked_all)}"
+        )
+    return tabular, all_features
 
 
 def _to_split(frame: pd.DataFrame, feature_cols: list[str]) -> SplitData:
@@ -259,12 +314,15 @@ def run(processed_dir: Path = PROCESSED_DIR, models_dir: Path = MODELS_DIR) -> N
     }
     encoded = _encode_categoricals(raw)
 
-    all_features: list[str] = [
-        c for c in encoded["train"].columns if c != LABEL_COL
-    ]
-    tabular_features: list[str] = [
-        c for c in all_features if c not in GRAPH_FEATURES
-    ]
+    tabular_features, all_features = _resolve_feature_lists(
+        list(encoded["train"].columns)
+    )
+    logger.info(
+        "Leakage-free features: %d tabular + %d graph = %d total",
+        len(tabular_features),
+        len(all_features) - len(tabular_features),
+        len(all_features),
+    )
 
     # --- Primary model: full feature set (graph + tabular), weighted. -------
     train_full = _to_split(encoded["train"], all_features)
@@ -331,8 +389,10 @@ def run(processed_dir: Path = PROCESSED_DIR, models_dir: Path = MODELS_DIR) -> N
             "graph_feature_auprc_lift": graph_auprc - tab_auprc,
         },
         "feature_importances": _feature_importances(final_model, all_features),
+        "feature_names": list(all_features),
         "graph_features": list(GRAPH_FEATURES),
         "tabular_features": tabular_features,
+        "leakage_blocklist": sorted(LEAKAGE_BLOCKLIST),
     }
 
     with (models_dir / "metrics.json").open("w", encoding="utf-8") as handle:

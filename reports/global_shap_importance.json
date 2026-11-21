@@ -1,0 +1,46 @@
+[
+  {
+    "feature": "type",
+    "mean_abs_shap_log_odds": 4.07228742957674
+  },
+  {
+    "feature": "step",
+    "mean_abs_shap_log_odds": 1.9326331054270267
+  },
+  {
+    "feature": "amount",
+    "mean_abs_shap_log_odds": 1.1596293175457977
+  },
+  {
+    "feature": "dest_in_degree",
+    "mean_abs_shap_log_odds": 0.9172362373374635
+  },
+  {
+    "feature": "dest_pagerank",
+    "mean_abs_shap_log_odds": 0.4596562476788531
+  },
+  {
+    "feature": "orig_pagerank",
+    "mean_abs_shap_log_odds": 0.15031777510605754
+  },
+  {
+    "feature": "orig_out_degree",
+    "mean_abs_shap_log_odds": 0.008074570108183252
+  },
+  {
+    "feature": "dest_out_degree",
+    "mean_abs_shap_log_odds": 0.0018290897695351304
+  },
+  {
+    "feature": "orig_in_degree",
+    "mean_abs_shap_log_odds": 1.1815635645859857e-06
+  },
+  {
+    "feature": "dest_clustering",
+    "mean_abs_shap_log_odds": 0.0
+  },
+  {
+    "feature": "orig_clustering",
+    "mean_abs_shap_log_odds": 0.0
+  }
+]

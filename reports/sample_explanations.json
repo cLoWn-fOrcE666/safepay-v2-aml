@@ -1,0 +1,827 @@
+[
+  {
+    "predicted_probability": 0.9985639558168775,
+    "raw_log_odds": 6.544425964355469,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 4559921.56,
+        "shap_log_odds": 5.051519870758057,
+        "abs_impact": 5.051519870758057,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.7977077960968018,
+        "abs_impact": 2.7977077960968018,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 391,
+        "shap_log_odds": -1.781107783317566,
+        "abs_impact": 1.781107783317566,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9985639558168775,
+    "row_index": 0,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.86%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=4,559,921.56 (+5.0515 log-odds, raised risk), type=CASH_OUT (+2.7977 log-odds, raised risk) and step=391 (-1.7811 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9985639558168775,
+    "raw_log_odds": 6.544425964355469,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 10000000.0,
+        "shap_log_odds": 5.051519870758057,
+        "abs_impact": 5.051519870758057,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.7977077960968018,
+        "abs_impact": 2.7977077960968018,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 677,
+        "shap_log_odds": -1.781107783317566,
+        "abs_impact": 1.781107783317566,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9985639558168775,
+    "row_index": 1,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.86%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=10,000,000.00 (+5.0515 log-odds, raised risk), type=CASH_OUT (+2.7977 log-odds, raised risk) and step=677 (-1.7811 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9985639558168775,
+    "raw_log_odds": 6.544425964355469,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 10000000.0,
+        "shap_log_odds": 5.051519870758057,
+        "abs_impact": 5.051519870758057,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.7977077960968018,
+        "abs_impact": 2.7977077960968018,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 692,
+        "shap_log_odds": -1.781107783317566,
+        "abs_impact": 1.781107783317566,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9985639558168775,
+    "row_index": 2,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.86%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=10,000,000.00 (+5.0515 log-odds, raised risk), type=CASH_OUT (+2.7977 log-odds, raised risk) and step=692 (-1.7811 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9985639558168775,
+    "raw_log_odds": 6.544425964355469,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 3009125.59,
+        "shap_log_odds": 5.051519870758057,
+        "abs_impact": 5.051519870758057,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.7977077960968018,
+        "abs_impact": 2.7977077960968018,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 687,
+        "shap_log_odds": -1.781107783317566,
+        "abs_impact": 1.781107783317566,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9985639558168775,
+    "row_index": 3,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.86%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=3,009,125.59 (+5.0515 log-odds, raised risk), type=CASH_OUT (+2.7977 log-odds, raised risk) and step=687 (-1.7811 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9983918865606881,
+    "raw_log_odds": 6.431084156036377,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 2623051.23,
+        "shap_log_odds": 5.2943115234375,
+        "abs_impact": 5.2943115234375,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.7112889289855957,
+        "abs_impact": 2.7112889289855957,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 379,
+        "shap_log_odds": -1.9045729637145996,
+        "abs_impact": 1.9045729637145996,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9983918865606881,
+    "row_index": 4,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.84%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=2,623,051.23 (+5.2943 log-odds, raised risk), type=CASH_OUT (+2.7113 log-odds, raised risk) and step=379 (-1.9046 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9983918865606881,
+    "raw_log_odds": 6.431084156036377,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 3120690.98,
+        "shap_log_odds": 5.2943115234375,
+        "abs_impact": 5.2943115234375,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.7112889289855957,
+        "abs_impact": 2.7112889289855957,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 631,
+        "shap_log_odds": -1.9045729637145996,
+        "abs_impact": 1.9045729637145996,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9983918865606881,
+    "row_index": 5,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.84%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=3,120,690.98 (+5.2943 log-odds, raised risk), type=CASH_OUT (+2.7113 log-odds, raised risk) and step=631 (-1.9046 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9983918865606881,
+    "raw_log_odds": 6.431084156036377,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 5175876.53,
+        "shap_log_odds": 5.2943115234375,
+        "abs_impact": 5.2943115234375,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.7112889289855957,
+        "abs_impact": 2.7112889289855957,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 694,
+        "shap_log_odds": -1.9045729637145996,
+        "abs_impact": 1.9045729637145996,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9983918865606881,
+    "row_index": 6,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.84%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=5,175,876.53 (+5.2943 log-odds, raised risk), type=CASH_OUT (+2.7113 log-odds, raised risk) and step=694 (-1.9046 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9983918865606881,
+    "raw_log_odds": 6.431084156036377,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 10000000.0,
+        "shap_log_odds": 5.2943115234375,
+        "abs_impact": 5.2943115234375,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.7112889289855957,
+        "abs_impact": 2.7112889289855957,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 730,
+        "shap_log_odds": -1.9045729637145996,
+        "abs_impact": 1.9045729637145996,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9983918865606881,
+    "row_index": 7,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.84%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=10,000,000.00 (+5.2943 log-odds, raised risk), type=CASH_OUT (+2.7113 log-odds, raised risk) and step=730 (-1.9046 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9983370402393852,
+    "raw_log_odds": 6.397491931915283,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 4128853.75,
+        "shap_log_odds": 4.98547887802124,
+        "abs_impact": 4.98547887802124,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.8525521755218506,
+        "abs_impact": 2.8525521755218506,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 633,
+        "shap_log_odds": -1.8422690629959106,
+        "abs_impact": 1.8422690629959106,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9983370402393852,
+    "row_index": 8,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.83%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=4,128,853.75 (+4.9855 log-odds, raised risk), type=CASH_OUT (+2.8526 log-odds, raised risk) and step=633 (-1.8423 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9983370402393852,
+    "raw_log_odds": 6.397491931915283,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 10000000.0,
+        "shap_log_odds": 4.98547887802124,
+        "abs_impact": 4.98547887802124,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.8525521755218506,
+        "abs_impact": 2.8525521755218506,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 625,
+        "shap_log_odds": -1.8422690629959106,
+        "abs_impact": 1.8422690629959106,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9983370402393852,
+    "row_index": 9,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.83%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=10,000,000.00 (+4.9855 log-odds, raised risk), type=CASH_OUT (+2.8526 log-odds, raised risk) and step=625 (-1.8423 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9983370402393852,
+    "raw_log_odds": 6.397491931915283,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 6961359.11,
+        "shap_log_odds": 4.98547887802124,
+        "abs_impact": 4.98547887802124,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.8525521755218506,
+        "abs_impact": 2.8525521755218506,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 621,
+        "shap_log_odds": -1.8422690629959106,
+        "abs_impact": 1.8422690629959106,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9983370402393852,
+    "row_index": 10,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.83%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=6,961,359.11 (+4.9855 log-odds, raised risk), type=CASH_OUT (+2.8526 log-odds, raised risk) and step=621 (-1.8423 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9983370402393852,
+    "raw_log_odds": 6.397491931915283,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 10000000.0,
+        "shap_log_odds": 4.98547887802124,
+        "abs_impact": 4.98547887802124,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.8525521755218506,
+        "abs_impact": 2.8525521755218506,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 497,
+        "shap_log_odds": -1.8422690629959106,
+        "abs_impact": 1.8422690629959106,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9983370402393852,
+    "row_index": 11,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.83%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=10,000,000.00 (+4.9855 log-odds, raised risk), type=CASH_OUT (+2.8526 log-odds, raised risk) and step=497 (-1.8423 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9976357010181248,
+    "raw_log_odds": 6.0449066162109375,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 10000000.0,
+        "shap_log_odds": 5.071760654449463,
+        "abs_impact": 5.071760654449463,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.8150634765625,
+        "abs_impact": 2.8150634765625,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 386,
+        "shap_log_odds": -1.9364508390426636,
+        "abs_impact": 1.9364508390426636,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9976357010181248,
+    "row_index": 12,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.76%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=10,000,000.00 (+5.0718 log-odds, raised risk), type=CASH_OUT (+2.8151 log-odds, raised risk) and step=386 (-1.9365 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9976357010181248,
+    "raw_log_odds": 6.0449066162109375,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 6063657.03,
+        "shap_log_odds": 5.071760654449463,
+        "abs_impact": 5.071760654449463,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.8150634765625,
+        "abs_impact": 2.8150634765625,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 386,
+        "shap_log_odds": -1.9364508390426636,
+        "abs_impact": 1.9364508390426636,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9976357010181248,
+    "row_index": 13,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.76%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=6,063,657.03 (+5.0718 log-odds, raised risk), type=CASH_OUT (+2.8151 log-odds, raised risk) and step=386 (-1.9365 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9976357010181248,
+    "raw_log_odds": 6.0449066162109375,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 10000000.0,
+        "shap_log_odds": 5.071760654449463,
+        "abs_impact": 5.071760654449463,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.8150634765625,
+        "abs_impact": 2.8150634765625,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 425,
+        "shap_log_odds": -1.9364508390426636,
+        "abs_impact": 1.9364508390426636,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9976357010181248,
+    "row_index": 14,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.76%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=10,000,000.00 (+5.0718 log-odds, raised risk), type=CASH_OUT (+2.8151 log-odds, raised risk) and step=425 (-1.9365 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9976357010181248,
+    "raw_log_odds": 6.0449066162109375,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 10000000.0,
+        "shap_log_odds": 5.071760654449463,
+        "abs_impact": 5.071760654449463,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.8150634765625,
+        "abs_impact": 2.8150634765625,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 416,
+        "shap_log_odds": -1.9364508390426636,
+        "abs_impact": 1.9364508390426636,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9976357010181248,
+    "row_index": 15,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.76%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=10,000,000.00 (+5.0718 log-odds, raised risk), type=CASH_OUT (+2.8151 log-odds, raised risk) and step=416 (-1.9365 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9976357010181248,
+    "raw_log_odds": 6.0449066162109375,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 7578130.45,
+        "shap_log_odds": 5.071760654449463,
+        "abs_impact": 5.071760654449463,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.8150634765625,
+        "abs_impact": 2.8150634765625,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 452,
+        "shap_log_odds": -1.9364508390426636,
+        "abs_impact": 1.9364508390426636,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9976357010181248,
+    "row_index": 16,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.76%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=7,578,130.45 (+5.0718 log-odds, raised risk), type=CASH_OUT (+2.8151 log-odds, raised risk) and step=452 (-1.9365 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9976357010181248,
+    "raw_log_odds": 6.0449066162109375,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 3191058.32,
+        "shap_log_odds": 5.071760654449463,
+        "abs_impact": 5.071760654449463,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.8150634765625,
+        "abs_impact": 2.8150634765625,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 730,
+        "shap_log_odds": -1.9364508390426636,
+        "abs_impact": 1.9364508390426636,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9976357010181248,
+    "row_index": 17,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.76%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=3,191,058.32 (+5.0718 log-odds, raised risk), type=CASH_OUT (+2.8151 log-odds, raised risk) and step=730 (-1.9365 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9976357010181248,
+    "raw_log_odds": 6.0449066162109375,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 4480592.14,
+        "shap_log_odds": 5.071760654449463,
+        "abs_impact": 5.071760654449463,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.8150634765625,
+        "abs_impact": 2.8150634765625,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 650,
+        "shap_log_odds": -1.9364508390426636,
+        "abs_impact": 1.9364508390426636,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9976357010181248,
+    "row_index": 18,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.76%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=4,480,592.14 (+5.0718 log-odds, raised risk), type=CASH_OUT (+2.8151 log-odds, raised risk) and step=650 (-1.9365 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9975168954814561,
+    "raw_log_odds": 5.9957594871521,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 3401641.0,
+        "shap_log_odds": 5.399132251739502,
+        "abs_impact": 5.399132251739502,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.661301374435425,
+        "abs_impact": 2.661301374435425,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 425,
+        "shap_log_odds": -2.191664457321167,
+        "abs_impact": 2.191664457321167,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9975168954814561,
+    "row_index": 19,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.75%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=3,401,641.00 (+5.3991 log-odds, raised risk), type=CASH_OUT (+2.6613 log-odds, raised risk) and step=425 (-2.1917 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9975168954814561,
+    "raw_log_odds": 5.9957594871521,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 3642569.29,
+        "shap_log_odds": 5.399132251739502,
+        "abs_impact": 5.399132251739502,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.661301374435425,
+        "abs_impact": 2.661301374435425,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 494,
+        "shap_log_odds": -2.191664457321167,
+        "abs_impact": 2.191664457321167,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9975168954814561,
+    "row_index": 20,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.75%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=3,642,569.29 (+5.3991 log-odds, raised risk), type=CASH_OUT (+2.6613 log-odds, raised risk) and step=494 (-2.1917 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9975168954814561,
+    "raw_log_odds": 5.9957594871521,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 3965182.83,
+        "shap_log_odds": 5.399132251739502,
+        "abs_impact": 5.399132251739502,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.661301374435425,
+        "abs_impact": 2.661301374435425,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 447,
+        "shap_log_odds": -2.191664457321167,
+        "abs_impact": 2.191664457321167,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9975168954814561,
+    "row_index": 21,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.75%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=3,965,182.83 (+5.3991 log-odds, raised risk), type=CASH_OUT (+2.6613 log-odds, raised risk) and step=447 (-2.1917 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9975130575057662,
+    "raw_log_odds": 5.994211196899414,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 6038051.03,
+        "shap_log_odds": 5.216516971588135,
+        "abs_impact": 5.216516971588135,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.71307373046875,
+        "abs_impact": 2.71307373046875,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 621,
+        "shap_log_odds": -2.0403854846954346,
+        "abs_impact": 2.0403854846954346,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9975130575057662,
+    "row_index": 22,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.75%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=6,038,051.03 (+5.2165 log-odds, raised risk), type=CASH_OUT (+2.7131 log-odds, raised risk) and step=621 (-2.0404 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9974483801462404,
+    "raw_log_odds": 5.968472003936768,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 6106149.52,
+        "shap_log_odds": 5.361760139465332,
+        "abs_impact": 5.361760139465332,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.7054505348205566,
+        "abs_impact": 2.7054505348205566,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 582,
+        "shap_log_odds": -2.186530113220215,
+        "abs_impact": 2.186530113220215,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9974483801462404,
+    "row_index": 23,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.74%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=6,106,149.52 (+5.3618 log-odds, raised risk), type=CASH_OUT (+2.7055 log-odds, raised risk) and step=582 (-2.1865 log-odds, lowered risk)."
+  },
+  {
+    "predicted_probability": 0.9974483801462404,
+    "raw_log_odds": 5.968472003936768,
+    "base_log_odds": 0.24633580446243286,
+    "threshold": 0.9839784502983093,
+    "is_flagged": true,
+    "top_drivers": [
+      {
+        "feature": "amount",
+        "value": 2895954.99,
+        "shap_log_odds": 5.361760139465332,
+        "abs_impact": 5.361760139465332,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "type",
+        "value": "CASH_OUT",
+        "shap_log_odds": 2.7054505348205566,
+        "abs_impact": 2.7054505348205566,
+        "direction": "INCREASES_RISK"
+      },
+      {
+        "feature": "step",
+        "value": 568,
+        "shap_log_odds": -2.186530113220215,
+        "abs_impact": 2.186530113220215,
+        "direction": "DECREASES_RISK"
+      }
+    ],
+    "probability": 0.9974483801462404,
+    "row_index": 24,
+    "investigator_report": "Transaction flagged for review: the model's calibrated fraud probability was 99.74%, which crossed the alert threshold of 98.40%. The dominant TreeSHAP drivers were amount=2,895,954.99 (+5.3618 log-odds, raised risk), type=CASH_OUT (+2.7055 log-odds, raised risk) and step=568 (-2.1865 log-odds, lowered risk)."
+  }
+]
